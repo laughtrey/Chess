@@ -6,7 +6,6 @@
 #include "chesspiece.h"
 class Board {
 private:
-  std::vector<Chesspiece*> v;
 
 public:
   Board();
