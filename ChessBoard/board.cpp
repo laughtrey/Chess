@@ -5,6 +5,11 @@ Board()
 {
 
 }
+/**
+ * There must be a better way to generate the initial playing field. I realized than an array is like
+ * an array of objects, so it should actually be an array of chesspieces, including a 'blank' piece
+ * that acts as an empty square? so the Square class would actually be derived under Chesspiece class.
+ */
 void create_board() {
   chesspiece playing_field[8][8];
   playing_field[0][0] = new wR();
