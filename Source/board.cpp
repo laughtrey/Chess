@@ -13,8 +13,8 @@ Board::Board()
  * that acts as an empty square? so the Square class would actually be derived under Chesspiece class.
  */
 void create_board() {
-  Chesspiece playing_field[1][1];
-  playing_field[0][0] = new Queen wR(7,false,true,true);
+  Chesspiece* playing_field[1][1];
+  playing_field[0][0] = new Queen(7,false,true,true);
   /*
   playing_field[0][1] = new queen wN(3,false,true,true);
   playing_field[0][2] = new queen wB(7,true,false,false);
