@@ -8,10 +8,17 @@ protected:
   bool can_move_vertical();
   bool can_move_horizontal();
 public:
+  Chesspiece();
   Chesspiece(int max_spaces,bool move_diag,bool move_vert,bool move_horiz);
 };
-Chesspiece::Chesspiece(int max_spaces,bool move_diag,bool move_vert,bool move_horiz)
-{
+Chesspiece::Chesspiece(){
+    m_max_spaces;
+    move_diagonal;
+    move_vertical;
+    move_horizontal;
+
+}
+Chesspiece::Chesspiece(int max_spaces,bool move_diag,bool move_vert,bool move_horiz){
     m_max_spaces = max_spaces;
     move_diagonal = move_diag;
     move_vertical = move_vert;
